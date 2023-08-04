@@ -1,0 +1,115 @@
+.form-section
+	padding: 140px 0 100px
+
+form 
+	display: flex
+	flex-direction: column
+	max-width: 380px
+	padding-top: 25px
+	margin: 25px auto 0
+	text-align: left
+
+/*Text inputs*/
+input.input 
+	color: rgba(0, 0, 0, 0.87)
+	border: 1px solid #d0cfcf
+	background-color: transparent
+	border-radius: 4px
+	padding: 0 16px
+	height: 54px
+	display: block
+	width: 100%
+	cursor: initial
+	transition: opacity 0.3s ease
+	&:focus 
+		outline: none
+		border: 1px solid #d0cfcf
+		&::placeholder
+			opacity: 0
+			transition: opacity 0.3s ease
+
+.text-input 
+	position: relative
+	
+.text-input	+ .text-input 
+	margin-top: 50px
+
+.label 
+	font-size: 12px
+	line-height: 1.17
+	color: #7e7e7e
+	position: absolute
+	padding: 0 8px
+	bottom: -18px
+	left: 10px
+	&.input-error
+		color: #cb3d40
+.input.input-error 
+	border: 2px solid #cb3d40
+
+
+/*Positions Radio Buttons*/
+label.form__check-label 
+	display: flex
+	gap: 12px
+
+.form__positions 
+	margin-top: 43px
+	display: flex
+	flex-direction: column
+	gap: 7px
+	p
+		margin-bottom: 4px
+	
+input[type='radio']
+	border: 1px solid #d0cfcf
+	width: 20px
+	height: 20px
+
+
+/*Custom input type file*/
+.labelPhoto
+	margin-top: 47px
+	display: flex
+	height: 54px
+	border: 1px solid #d0cfcf
+	border-radius: 4px
+	background-color: transparent
+	cursor: pointer
+	align-items: center
+	span:first-child
+		display: flex
+		width: 83px
+		align-items: center
+		justify-content: center
+		color: rgba(0, 0, 0, 0.87)
+		border: 1px solid rgba(0, 0, 0, 0.87)
+		border-radius: 4px 0px 0px 4px
+		height: 100%
+	span:last-child
+		margin-left: 16px
+		color: #7e7e7e
+		text-overflow: ellipsis
+		overflow: hidden
+		white-space: nowrap
+
+input[type='file']
+	visibility: hidden
+	position: absolute
+
+
+input[type='file']::file-selector-button
+	padding: 8px 12px
+	border: 1px solid #ccc
+	border-radius: 4px
+	background-color: #f1f1f1
+	cursor: pointer
+
+
+/*Button*/
+.form__button
+	display: block
+	margin: 0 auto
+	margin-top: 50px
+
+	

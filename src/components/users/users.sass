@@ -1,0 +1,21 @@
+.users
+	padding-top: 140px
+	&__button 
+		min-width: 120px
+		display: block
+		margin: 50px auto 0px
+	&__grid
+		margin-top: 25px
+		padding-top: 25px
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		gap: 29px
+		@media (max-width: 991.97px)
+			grid-template-columns: repeat(2, 1fr)
+			gap: 16px
+			justify-content: center
+		@media (max-width: 767.98px)
+			grid-template-columns: minmax(auto, 420px)
+			gap: 20px
+	@media (max-width: 359.98px)
+		padding-top: 100px
